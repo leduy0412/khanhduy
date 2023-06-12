@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+   
+    <style>
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product {
+            width: 50%;
+            margin-bottom: 80px;
+            text-align: center;
+            font-size: 20px;
+        }
+        body{
+            background-color: mediumaquamarine;
+        }
+        button{
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: rgba(0, 140, 255, 0.462)
+        }
+        .btn-remove:hover{
+            background-color: yellow;
+        }
+        .btn-continue:hover{
+            background-color: red;
+        }
+        .btn-checkout:hover{
+            background-color: red;
+        }
+        .total{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img style="position: absolute; top: 5px; left: 10px; max-width: 80px; height: auto;" src="/images/logovnb.svg" alt="">
+    <div class="container">
+        <header>
+        </header>
+
+        <div>
+            <h1 style="text-align: center; color: brown;">Giỏ hàng</h1>
+
+            <div class="product-container">
+                <div class="product">
+                    <img src="/images/ao-cau-long.jpg" alt="Áo cầu lông">
+                    <div class="product-info">
+                        <h3>Áo cầu lông</h3>
+                        <p>Số lượng: 2</p>
+                        <p>Giá: ₫400,000</p>
+                    </div>
+                    <button class="btn-remove">Xóa</button>
+                </div>
+
+                <div class="product">
+                    <img src="/images/vay-cau-long.webp" alt="Váy cầu lông">
+                    <div class="product-info">
+                        <h3>Váy cầu lông</h3>
+                        <p>Số lượng: 1</p>
+                        <p>Giá: ₫250,000</p>
+                    </div>
+                    <button class="btn-remove">Xóa</button>
+                </div>
+            </div>
+
+            <div class="total">
+                <p>Tổng cộng: ₫650,000</p>
+            </div>
+
+            <div class="actions">
+                <button class="btn-continue">Tiếp tục mua hàng</button>
+                <button class="btn-checkout">Thanh toán</button>
+            </div>
+        </div>
+
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>
+

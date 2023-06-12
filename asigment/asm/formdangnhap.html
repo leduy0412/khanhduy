@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> form đăng nhập</title>
+    <style>
+
+        body {
+            background: url(./images/anhformdangnhap.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            z-index: 1;
+        }
+
+        .form{
+            width: 1500px;
+            height: 500px;
+            margin: 0px auto;
+            padding: 60px 0 10px 15px;
+            box-shadow: 0 0 5px gray;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 0 5px black;
+            color: rgb(255, 0, 30);
+        }
+        .forgot-link{
+            margin-left: 200px;
+            font-size: 20px;
+            color: rgb(0, 100, 33);
+        }
+        .forgot-link:hover{
+            background-color:yellow;
+            color: blue;
+        }
+        .vien{
+            box-shadow: 1px 1px 0 0 #000000;
+        }
+        .dk{
+            width:  100px;
+            height: 30px;
+            font-size: 15px;
+            background-color: rgb(0, 255, 115);
+            border-radius: 6px;
+        }
+
+        .dk:hover {
+            background-color: yellow;
+        }
+        .backround{
+            background-color: rgba(255, 255, 255, 0);
+            
+        }
+
+
+
+        
+    </style>
+</head>
+<body>
+    <form class="form" action="#" method="post">
+        <h2 style="text-align: center; font-weight: bold;">Thông tin đăng nhập</h2>
+         User Name: <br>
+         <input  class="backround" type="text" style="border-radius: 35px; padding: 15px; padding-right: 150px; outline: none; border: 2px solid rgba(0, 0, 255, 0.977);"> <br>
+         Password: <br>
+         <input class="backround" type="password" style="border-radius: 35px; padding: 15px; padding-right: 150px; outline: none; border: 2px solid rgb(30, 0, 255);" > <br>
+         <label for="" style="font-size: 25px;">
+            <input class="nho" type="checkbox">Remember me?
+         </label>
+         <br>
+         <br>
+         <br>
+         <br>
+        
+        <input class="dk" type="submit" value="Submit">
+        <a href="./quenmk.html" class="forgot-link" style="text-decoration: none;">Quên mật khẩu?</a>
+
+        
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(./images/anhhoanghon.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            z-index: 1;
+        }
+
+        .form{
+            width: 1500px;
+            height: 709px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 13px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 70px;
+            box-shadow: 0 0 5px gray;
+            
+        }
+        .nut{
+            padding: 5px 30px;
+            margin-right: 10px;
+            margin-left: 100px;
+            margin: 10px 90px;
+
+        }
+        .nut:hover{
+            background-color: yellow;
+        }
+
+        .fullname {
+            background-color: rgba(255, 255, 255, 0.436);
+            padding: 7px 30px;
+            border-radius: 8px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data" class="form">
+        <h2 style="text-align: center; font-weight: bold;">Thông tin đăng kí</h2>
+        <div>
+            <label for="">Họ và tên:</label> <br>
+            <input  class="fullname" type="text"> <br> <br>
+
+        </div>
+        <div>
+            <label for="">Giới tính:</label>
+            <label for="nam"><input type="radio" checked name="gt" id="nam">Nam</label>
+            <label for="nu"><input type="radio" checked name="gt" id="nu">Nữ</label><br> 
+            <label for="">Email:</label> <br> 
+            <input  class="fullname"type="text"> <br>
+        </div>
+        <div>
+            <label for="" >Hình ảnh:</label> <br>
+            <input type="file">
+        </div>
+        <div>
+            <label for="">Quốc tịch:</label><br>
+            <select name="" id="" class="fullname" >
+                <option value="" >Việt Nam</option>
+                <option value="">Thái Lan</option>
+                <option value="">Malaysia</option>
+                <option value="">Nhật Bản</option>
+            </select>
+        </div>
+        <div>
+            <label for="" style="margin-right: 600px; ">Ghi chú:</label> 
+            <br>
+            <textarea name="" id="" cols="90" rows="17" style="background-color: rgba(255, 255, 255, 0.415); border-radius: 6px;"></textarea>
+        </div>
+        <br>
+        <div>
+            <input class="nut" type="submit" value="Đăng kí">
+            <input class="nut" type="reset" value="Nhập lại">
+        </div>
+    </form>
+</body>
+</html>
